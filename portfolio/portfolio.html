@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mary Joyel | Front-End Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: linear-gradient(to right, #b3d9ff, #cceeff);
+    }
+    
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #f0faff, #e6f2ff);
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #b3d9ff, #cceeff);
+      color: #003366;
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .button {
+      background: linear-gradient(to right, #66ccff, #3399ff);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: linear-gradient(to right, #0d1e2f, #66ccff);
+    }
+
+    section {
+      width: 100%;
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      color: #0066cc;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      border: 4px solid #cceeff;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid #9d9a9a;
+      text-align: left;
+    }
+
+    thead {
+      background: linear-gradient(to right, #0d0d0ef8, #192128);
+      color: rgb(16, 4, 4);
+    }
+
+    a {
+      color: #003366;
+      text-decoration: none;
+      
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1.5px solid #1f1c1c;
+      font-size: 1rem;
+      background: #fff;
+      color:#1a1a1a
+    }
+
+    .submit {
+      background: linear-gradient(to right, #66ccff, #3399ff);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .submit:hover {
+      text-align: center;
+      background: linear-gradient(to right, #2b79d3, #314550);
+    }
+
+    .fixedbutton {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: linear-gradient(to right, #66ccff, #3399ff);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background: linear-gradient(to right, #b3d9ff, #cceeff);
+      color: #003366;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <h1>Hi, I'm Mary Joyel Bandaru</h1>
+  <p>Aspiring Front-End Web Developer | B.Tech Student</p>
+  <nav>
+    <a href="#about"><button class="button">About</button></a>
+    <a href="#skills"><button class="button">Skills</button></a>
+    <a href="#projects"><button class="button">Projects</button></a>
+    <a href="#contact"><button class="button">Contact</button></a>
+    <a href="MaryJoyel_Resume.pdf" download><button class="button">Download Resume</button></a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="joyel portfolio.jpg" alt="Mary Joyel Bandaru" />
+    <p style="text-align: center; max-width: 700px; margin: 0 auto;">
+      I’m a passionate <strong>Front-End Web Developer</strong> currently pursuing my B.Tech at
+      Swarnandhra College of Engineering & Technology. I enjoy building responsive, user-friendly
+      websites and web applications using modern technologies.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Python Programming</li>
+      <li>MySql</li>
+      <li>CN,OOPS,DBMS</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Technologies</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Portfolio Website</td>
+          <td>Responsive personal website to showcase my work.</td>
+          <td>HTML, CSS,Javascript</td>
+          <td><a href="https://github.com/joyelbandaru/portfolio" target="_blank">GitHub</a></td>
+        </tr>
+        <tr>
+  <td>Snake Hunt Game</td>
+  <td>Classic snake game: control the snake, eat food, grow longer, and avoid collisions.</td>
+  <td>Python, Pygame</td>
+  <td><a href="https://github.com/joyelbandaru/snake-hunt-game" target="_blank">GitHub</a></td>
+</tr>
+<tr>
+  <td>Amazon Clone</td>
+  <td>Responsive e-commerce website inspired by Amazon, featuring product listings, search, and cart UI.</td>
+  <td>HTML, CSS, JavaScript</td>
+  <td><a href="https://github.com/joyelbandaru/amazon-clone" target="_blank">GitHub</a></td>
+</tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div style="text-align:center; display:flex; justify-content:center; gap:30px; margin-bottom:20px;">
+    <a href="mailto:maryjoyelb@gmail.com" style="color:black; font-size:1.1rem;">✉️ Email</a>
+    <a href="http://www.linkedin.com/in/mary-joyel-bandaru" target="_blank" style="color:black; font-size:1.1rem;">🔗 LinkedIn</a>
+    <a href="https://github.com/joyelbandaru" target="_blank" style="color:black; font-size:1.1rem;">🐙 GitHub</a>
+ 
+  </div>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" />
+      </div>
+      <div>
+        <label for="bio">Short Message</label>
+        <input type="text" id="bio" maxlength="200" placeholder="Your message..." />
+      </div>
+      <button type="submit" class="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<a href="#top"><button class="fixedbutton">&#8679;</button></a>
+
+<footer>
+  <p>&copy; 2025 Mary Joyel Bandaru | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
